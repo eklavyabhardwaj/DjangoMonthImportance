@@ -5,6 +5,8 @@
     <title>Home</title>
 </head>
 <body>
-<ul></ul>
+{% for month in months %}
+<li><a href="{% url 'month-challenge' month % }">{{ month|title }}</a> </li>
+{% endfor %}
 </body>
 </html>
