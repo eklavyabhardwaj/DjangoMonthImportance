@@ -19,7 +19,7 @@ monthly_challenges = {
     "september":"september1",
     "october":"october1",
     "november":"november1",
-    "december":"december1"
+    "december":None
 
 }
 

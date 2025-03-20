@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{month_name|title}} Special!</title>
+    <title>{{ month_name|title }} Special!</title>
 </head>
 <body>
-<h1>{{month_name|title}} Special!</h1>
-<h2>{{text}}</h2>
+    <h1>{{ month_name|title }} Special!</h1>
+    {% if text is not None %}
+        <h2>{{ text }}</h2>
+    {% else %}
+        <p>There are no challenges for this month.</p>
+    {% endif %}
 </body>
 </html>
